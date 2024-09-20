@@ -1,0 +1,56 @@
+.contenedor {
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "section section ads"
+        "footer footer footer";
+}
+
+.contenedor .header {
+    background-color: aqua;
+    grid-area: header;
+}
+
+.contenedor .nav {
+    background-color: red;
+    grid-area: nav;
+}
+
+.contenedor .section {
+    background-color: rgb(0, 255, 17);
+    grid-area: section;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.contenedor .contenido1, .contenido2 {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+}
+
+.contenedor .ads {
+    background-color: rgb(255, 0, 200);
+    grid-area: ads;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.contenedor .ads .publi1, .contenedor .ads .publi2 {
+    background-color: #d8b3ff;
+    padding: 20px;
+    border: 1px solid #000;
+}
+
+.contenedor .footer {
+    background-color: rgb(238, 255, 0);
+    grid-area: footer;
+}
+
+
